@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jlsize: moda circular, catálogo second hand y experiencia digital.">
+  <title>Jlsize | Recycle · Re-wear</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="logo">JLSIZE<span>.</span></a>
+
+      <nav class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#surgimiento">Surgimiento</a>
+        <a href="#catalogo">Catálogo</a>
+        <a href="#concepto">Concepto</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <div class="nav-actions">
+        <a class="mini-btn" href="#catalogo">Explorar</a>
+
+        <button class="cart-trigger" id="cartTrigger" type="button" aria-label="Abrir carrito">
+          <span aria-hidden="true">🛒</span>
+          <span class="cart-label">Carrito</span>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">SECOND HAND · RE-WEAR · STYLE</p>
+          <h1>RE-CYCLE.<br>RE-WEAR.</h1>
+          <p class="lead">
+            Prendas con historia, seleccionadas para comenzar una nueva etapa.
+            Jlsize combina moda circular, accesibilidad y una identidad visual atrevida.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#catalogo">Ver catálogo</a>
+            <a class="btn ghost" href="#surgimiento">Nuestra historia</a>
+          </div>
+        </div>
+
+        <figure class="hero-visual">
+          <img src="images/mockup_principal.jpg" alt="Mockup publicitario Re-Cycle Re-Wear de Jlsize">
+          <figcaption>RE-CYCLE / RE-WEAR</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="origin" id="surgimiento">
+      <div class="container origin-grid">
+        <div class="origin-image">
+          <img src="images/surgimiento.jpg" alt="Cajas con prendas de segunda mano">
+          <span class="sticker">THE BEGINNING</span>
+        </div>
+
+        <div class="origin-copy">
+          <p class="eyebrow">SURGIMIENTO</p>
+          <h2>Una prenda puede tener más de una historia.</h2>
+          <p>
+            Jlsize nace de la idea de rescatar, seleccionar y volver a poner en circulación
+            prendas que todavía tienen mucho que ofrecer.
+          </p>
+          <p>
+            Cada pieza forma parte de una experiencia donde estilo, reutilización y
+            accesibilidad se encuentran.
+          </p>
+
+          <div class="origin-points">
+            <div><strong>01</strong><span>Seleccionar</span></div>
+            <div><strong>02</strong><span>Reutilizar</span></div>
+            <div><strong>03</strong><span>Reinventar</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog-section" id="catalogo">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">CATÁLOGO DIGITAL</p>
+            <h2>Drop seleccionado</h2>
+          </div>
+
+          <div class="filters" aria-label="Filtrar catálogo">
+            <button class="filter active" data-filter="Todos">Todos</button>
+            <button class="filter" data-filter="Tops">Tops</button>
+            <button class="filter" data-filter="Bottoms">Bottoms</button>
+            <button class="filter" data-filter="Abrigos">Abrigos</button>
+            <button class="filter" data-filter="Accesorios">Accesorios</button>
+          </div>
+        </div>
+
+        <div class="catalog-grid" id="catalogGrid"></div>
+      </div>
+    </section>
+
+    <section class="editorial" id="concepto">
+      <div class="container editorial-grid">
+        <div class="editorial-card">
+          <img src="images/jeans_essentials.jpg" alt="Pieza gráfica Jeans Essentials">
+        </div>
+
+        <div class="editorial-text">
+          <p class="eyebrow light">STEP BY STEP</p>
+          <h2>NO MORE<br>AWKWARD FITS.</h2>
+          <p>
+            Tipografía grande, rojo intenso, azul y composiciones editoriales construyen
+            una personalidad joven, directa y reconocible.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="delivery">
+      <div class="container delivery-grid">
+        <div class="delivery-text">
+          <p class="eyebrow">EXPERIENCIA JLSIZE</p>
+          <h2>Tu ropa, más cerca.</h2>
+          <p>
+            La identidad no se queda en el catálogo: también acompaña la comunicación,
+            la entrega y cada punto de contacto con la marca.
+          </p>
+        </div>
+
+        <img src="images/free_delivery.jpg" alt="Pieza gráfica Free Delivery de Jlsize">
+      </div>
+    </section>
+
+    <section class="contact-section" id="contacto">
+      <div class="container contact-layout">
+        <div class="contact-copy">
+          <p class="eyebrow">CONTÁCTANOS</p>
+          <h2>¿Buscas una prenda o quieres saber más?</h2>
+          <p>
+            Envíanos una solicitud y nuestro equipo podrá responderte sobre
+            disponibilidad, tallas, pedidos o información de la marca.
+          </p>
+
+          <div class="contact-feature">
+            <strong>¿Qué puedes consultar?</strong>
+            <span>Disponibilidad, tallas, pedidos, alianzas o información general.</span>
+          </div>
+        </div>
+
+        <form class="contact-form" id="contactForm">
+          <div class="field-row">
+            <label>
+              Nombre
+              <input type="text" name="name" required maxlength="80" placeholder="Tu nombre">
+            </label>
+
+            <label>
+              Correo
+              <input type="email" name="email" required maxlength="120" placeholder="correo@ejemplo.com">
+            </label>
+          </div>
+
+          <div class="field-row">
+            <label>
+              Teléfono
+              <input type="tel" name="phone" maxlength="30" placeholder="+507 ...">
+            </label>
+
+            <label>
+              Tipo de solicitud
+              <select name="subject" required>
+                <option value="Producto">Producto</option>
+                <option value="Pedido">Pedido</option>
+                <option value="Alianza">Alianza</option>
+                <option value="Información">Información</option>
+              </select>
+            </label>
+          </div>
+
+          <label>
+            Mensaje
+            <textarea name="message" required maxlength="700" rows="5" placeholder="Cuéntanos qué necesitas..."></textarea>
+          </label>
+
+          <button class="btn primary contact-submit" type="submit">Enviar solicitud</button>
+          <p class="form-status" id="contactStatus" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <strong>JLSIZE.</strong>
+      <div class="footer-links">
+        <a href="#inicio">Volver arriba</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compra">
+    <div class="cart-header">
+      <div>
+        <p class="eyebrow">TU SELECCIÓN</p>
+        <h2>Carrito</h2>
+      </div>
+      <button class="icon-button" id="cartClose" type="button" aria-label="Cerrar carrito">×</button>
+    </div>
+
+    <div class="cart-items" id="cartItems"></div>
+
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+
+      <button class="checkout-btn" id="checkoutBtn" type="button">Finalizar pedido por WhatsApp</button>
+      <button class="clear-cart-btn" id="clearCartBtn" type="button">Vaciar carrito</button>
+
+      <p class="cart-note">
+        El botón prepara el pedido como mensaje; no procesa pagos dentro del sitio.
+      </p>
+    </div>
+  </aside>
+
+  <button class="ai-chat-button" id="aiChatButton" type="button" aria-label="Abrir JLSIZE AI">
+    <span>✦</span>
+    <span>JLSIZE AI</span>
+    <span class="ai-status-dot"></span>
+  </button>
+
+  <section class="ai-chat-panel" id="aiChatPanel" aria-label="Asistente JLSIZE AI">
+    <div class="ai-chat-header">
+      <div class="ai-chat-brand">
+        <span class="ai-logo">✦</span>
+        <div>
+          <strong>JLSIZE AI</strong>
+          <small>Asistente de compras</small>
+        </div>
+      </div>
+      <button class="ai-chat-close" id="aiChatClose" type="button" aria-label="Cerrar chat">×</button>
+    </div>
+
+    <div class="ai-chat-messages" id="aiChatMessages">
+      <div class="ai-message assistant">
+        <div class="ai-bubble">
+          Hola 👋 Puedo ayudarte con prendas, tallas, precios y recomendaciones.
+        </div>
+      </div>
+    </div>
+
+    <div class="ai-quick-actions">
+      <button type="button" data-prompt="¿Qué tienes por menos de $7?">Menos de $7</button>
+      <button type="button" data-prompt="¿Qué jeans tienes y en qué tallas?">Jeans</button>
+      <button type="button" data-prompt="Recomiéndame un outfit económico">Outfit económico</button>
+    </div>
+
+    <form class="ai-chat-form" id="aiChatForm">
+      <input id="aiChatInput" type="text" maxlength="700" autocomplete="off" placeholder="Escribe tu mensaje...">
+      <button type="submit" aria-label="Enviar">➜</button>
+    </form>
+
+    <p class="ai-disclaimer">Confirma disponibilidad antes de completar tu pedido.</p>
+  </section>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
