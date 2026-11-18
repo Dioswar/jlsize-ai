@@ -1,0 +1,118 @@
+[
+  {
+    "id": 1,
+    "category": "Abrigos",
+    "name": "Suéter rojo vintage",
+    "price": 6,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "image": "images/sueter_rojo.jpg",
+    "description": "Suéter rojo de estilo vintage, ideal para combinar con denim o básicos neutros."
+  },
+  {
+    "id": 2,
+    "category": "Tops",
+    "name": "Top amarillo",
+    "price": 5,
+    "sizes": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "image": "images/top_amarillo.jpg",
+    "description": "Top amarillo ligero con una vibra casual y fresca para looks de diario."
+  },
+  {
+    "id": 3,
+    "category": "Bottoms",
+    "name": "Falda de cuadros",
+    "price": 7,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "image": "images/falda_cuadros.jpg",
+    "description": "Falda larga de cuadros con estética retro y fácil de combinar."
+  },
+  {
+    "id": 4,
+    "category": "Tops",
+    "name": "Blusa blanca",
+    "price": 4,
+    "sizes": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "image": "images/blusa_blanca.jpg",
+    "description": "Blusa blanca femenina y versátil para looks casuales o delicados."
+  },
+  {
+    "id": 5,
+    "category": "Tops",
+    "name": "Top de rayas",
+    "price": 4,
+    "sizes": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "image": "images/top_rayas.jpg",
+    "description": "Top de rayas con silueta ajustada y estilo juvenil."
+  },
+  {
+    "id": 6,
+    "category": "Abrigos",
+    "name": "Chaqueta denim",
+    "price": 7,
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "image": "images/chaqueta_denim.jpg",
+    "description": "Chaqueta denim oscura con detalle de contraste para elevar cualquier outfit."
+  },
+  {
+    "id": 7,
+    "category": "Bottoms",
+    "name": "Jeans wide leg",
+    "price": 8,
+    "sizes": [
+      "4",
+      "6",
+      "8",
+      "10"
+    ],
+    "image": "images/jeans.jpg",
+    "description": "Jeans de pierna ancha con caída relajada y estética dosmilera."
+  },
+  {
+    "id": 8,
+    "category": "Tops",
+    "name": "Top crema",
+    "price": 4,
+    "sizes": [
+      "XS",
+      "S",
+      "M"
+    ],
+    "image": "images/top_crema.jpg",
+    "description": "Top crema con detalles fruncidos para un look suave y femenino."
+  },
+  {
+    "id": 9,
+    "category": "Accesorios",
+    "name": "Bolso marrón",
+    "price": 7,
+    "sizes": [
+      "Única"
+    ],
+    "image": "images/bolso_marron.jpg",
+    "description": "Bolso de hombro marrón con estética Y2K para completar el look."
+  }
+]
