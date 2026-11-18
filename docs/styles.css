@@ -266,3 +266,21 @@ body.cart-open .cart-drawer{transform:translateX(0)}
   .ai-chat-button{right:14px;bottom:14px}
   .ai-chat-panel{right:14px;bottom:76px;width:calc(100vw - 28px);height:min(620px,calc(100dvh - 100px))}
 }
+
+
+.contact-real-links{
+  display:grid;
+  gap:9px;
+  margin-top:24px
+}
+.contact-real-links a{
+  display:block;
+  padding:12px 0;
+  border-bottom:1px solid var(--line);
+  color:var(--blue);
+  font-weight:800;
+  font-size:.82rem
+}
+.contact-real-links a:hover{
+  color:var(--red)
+}

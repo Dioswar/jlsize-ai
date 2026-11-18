@@ -81,3 +81,9 @@ El frontend está en `docs/` para poder publicarse desde GitHub Pages. El backen
 - `backend/.env` está excluido por `.gitignore`.
 - La clave de Gemini no se expone en el frontend.
 - El panel administrativo requiere variables de entorno para usuario y contraseña.
+
+
+## Contacto oficial
+
+- Instagram: @jisizee
+- Correo: jisizebrand@gmail.com
