@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jlsize | Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+  <header class="admin-header">
+    <a href="index.html" class="admin-logo">JLSIZE<span>.</span></a>
+    <a href="index.html">← Volver al sitio</a>
+  </header>
+
+  <main class="admin-shell">
+    <section class="login-card" id="loginView">
+      <p class="eyebrow">PANEL ADMIN</p>
+      <h1>Gestión interna</h1>
+      <p>Inicia sesión para administrar productos y revisar solicitudes de contacto.</p>
+
+      <form id="loginForm">
+        <label>
+          Usuario
+          <input type="text" name="username" required autocomplete="username">
+        </label>
+
+        <label>
+          Contraseña
+          <input type="password" name="password" required autocomplete="current-password">
+        </label>
+
+        <button type="submit">Entrar</button>
+        <p class="status" id="loginStatus"></p>
+      </form>
+    </section>
+
+    <section class="dashboard hidden" id="dashboardView">
+      <div class="dashboard-top">
+        <div>
+          <p class="eyebrow">JLSIZE ADMIN</p>
+          <h1>Dashboard</h1>
+        </div>
+
+        <button class="secondary" id="logoutButton" type="button">Cerrar sesión</button>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" data-tab="products">Productos</button>
+        <button class="tab" data-tab="contacts">Solicitudes</button>
+      </div>
+
+      <section class="panel" id="productsPanel">
+        <div class="panel-head">
+          <div>
+            <h2>Catálogo</h2>
+            <p>Agrega, edita o elimina productos.</p>
+          </div>
+          <button id="newProductButton" type="button">+ Nuevo producto</button>
+        </div>
+
+        <div class="product-form-wrap hidden" id="productFormWrap">
+          <form id="productForm" class="product-form">
+            <input type="hidden" name="id">
+
+            <label>
+              Nombre
+              <input type="text" name="name" required maxlength="100">
+            </label>
+
+            <label>
+              Categoría
+              <select name="category" required>
+                <option>Tops</option>
+                <option>Bottoms</option>
+                <option>Abrigos</option>
+                <option>Accesorios</option>
+              </select>
+            </label>
+
+            <label>
+              Precio
+              <input type="number" name="price" min="0" step="0.01" required>
+            </label>
+
+            <label>
+              Tallas separadas por coma
+              <input type="text" name="sizes" placeholder="S, M, L" required>
+            </label>
+
+            <label class="full">
+              Imagen
+              <input type="text" name="image" placeholder="images/producto.jpg o https://...">
+            </label>
+
+            <label class="full">
+              Descripción
+              <textarea name="description" rows="4" required maxlength="500"></textarea>
+            </label>
+
+            <div class="form-actions full">
+              <button type="submit">Guardar</button>
+              <button class="secondary" id="cancelProductButton" type="button">Cancelar</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="admin-grid" id="adminProducts"></div>
+      </section>
+
+      <section class="panel hidden" id="contactsPanel">
+        <div class="panel-head">
+          <div>
+            <h2>Solicitudes</h2>
+            <p>Mensajes registrados desde el formulario público.</p>
+          </div>
+          <button class="secondary" id="refreshContactsButton" type="button">Actualizar</button>
+        </div>
+
+        <div class="contacts-list" id="contactsList"></div>
+      </section>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>
